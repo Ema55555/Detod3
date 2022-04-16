@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detod3</title>
+    <link rel="stylesheet" href="../Css/Css.css">
+    <script src="https://kit.fontawesome.com/01c6642b2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header>
+        <nav class="MenuDesktop">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="envios.html">Envios</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+        <nav class="NavMobile">
+            <label for="check" class="boton"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="check" class="check">
+            <ul class="MobileCheck">
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="productos.html"><li>Productos</li></a>
+                <a href="info.html"><li>Info</li></a>
+                <a href="envios.html"><li>Envios</li></a>
+                <a href="contactos.html"><li>Contactos</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="post">
+            <input type="text" placeholder="Apellido y Nombre" name="apellidonombre">
+            <input type="email" placeholder="colocar mail" name="email">
+            <input type="number" placeholder="Numero de telefono" name="numerodetelefono">
+            <select name="Genero" id="">
+                <option value="0" selected disabled>Genero</option>
+                <option value="1" >Masculino</option>
+                <option value="2" >Femenino</option>
+                <option value="3" >otros</option>
+            </select>
+            <textarea name="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+            <button type="submit"> Enviar</button>
+            <button type="reset"> reset</button>
+        </form>
+    </main>
+    <footer>
+        <nav class="MenuDesktop">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="envios.html">Envios</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+        <nav class="NavMobile">
+            <label for="check4" class="boton"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="check4" class="check">
+            <ul class="MobileCheck">
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="productos.html"><li>Productos</li></a>
+                <a href="info.html"><li>Info</li></a>
+                <a href="envios.html"><li>Envios</li></a>
+                <a href="contactos.html"><li>Contactos</li></a>
+            </ul>
+        </nav>
+        <ul>
+            <li><i class="fa-solid fa-envelope"></i>Mail de empresa</li>
+            <li><i class="fa-solid fa-phone"></i>Numero de telefono</li>
+            <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+            <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+        </ul>
+    </footer>
+</body>
+</html>
