@@ -1,0 +1,24 @@
+/* APLICO EXTEND Y MIXIN */
+@mixin boxSizes($top, $bottom, $rigth) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-right: $rigth;
+  }
+
+.texto_informativo{
+    .titulo {
+        background-color: #8990a2;
+        color: black;
+        text-align: center;
+        @include boxSizes(2rem, 20px, 75rem);        
+        font-size: 20px;
+      
+    }
+    .Texto {
+        @extend .titulo;    
+        padding-right:2rem;
+        padding-left:2rem;
+        font-size: 15px;
+        padding-bottom: 25px;
+    }
+}
