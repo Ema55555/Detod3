@@ -1,6 +1,8 @@
 @import "header";
 @import "footer";
-@import "Envios";
+@import "envios";
+@import "index";
+@import "info";
 
 
  * {
@@ -15,77 +17,17 @@
     overflow-x: hidden;
     background-color: #8990a2
 }
- 
 
 
 main {
-    min-height: 400px;
+    min-height: 400px; 
 
-    .carousel-inner h5 {
-        color: black;
-    
-    }
-    
-    .carousel-inner img {
-        width: 100%;
-        max-height: 460px;
-    }
-    
-    .carousel-caption{
-        background-color: rgba(34, 28, 70, 0.521);
-        padding: 0;
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-    
-    button {
-        display: inline-block;
-        font-size: 18px;
-    }
-    .row {
-        margin: 20px;
-        text-align: center;
-        font-size: 8px;
-    }
 
-    .Imagen{
-        width: 100%;
-        height: 350px;
-        margin-bottom: 0px;
-        object-fit: cover;
-        object-position: 0 80%;
-    }
+   
 
-    #titulo {
-        background-color: #8990a2;
-        color: black;
-        text-align: center;
-        padding-right: 75rem;
-        padding-bottom: 20px;
-        padding-top: 2rem;
-        font-size: 20px;
-      
-    }
-    
-    #Texto {
-        background-color: #8990a2;
-        color: black;
-        padding-right:2rem;
-        padding-left:2rem;
-        font-size: 15px;
-        padding-bottom: 25px;
-    }
-
-    #espacio  {
-        background-color: black;
-        color: black;
-        text-align: center;
-        font-size: 20px;
-       
-    }
-
+   
     #titulodeproducto { 
-        background-color: grey;
+        background: linear-gradient(90deg, rgba(64,64,88,1) 0%, rgba(92,92,143,1) 35%, rgba(118,159,167,1) 100%);
         text-align: center;
         padding: 5px 5px 10px 5px;
         margin: 10px 0px;
