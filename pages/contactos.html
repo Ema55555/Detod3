@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="IMPRESIONES 3D, REGALOS, MATE, MACETA, FUNKOS, APOYA CELULAR, PERSONALIZADO, ENVIOS">
+    <meta name="description" content="Detod3 es un lugar para encontrar los mejores regalos personalizados hechos en impresion 3D">   
     <title>Detod3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../stylesheet/Css.css">
@@ -11,6 +13,9 @@
     <script src="https://kit.fontawesome.com/01c6642b2f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!-- Comienzo de Header -->
+
     <header>
         <nav class="navbar navbar-expand-lg navbar navbar-light"
         style="background: linear-gradient(90deg, rgba(64,64,88,1) 0%, rgba(92,92,143,1) 35%, rgba(118,159,167,1) 100%)">
@@ -32,22 +37,43 @@
         </div>
       </nav>
     </header>
+
+<!-- Fin de Header -->
+<!-- Comienzo de Main -->
+
     <main>
-        <form method="post">
-            <input type="text" placeholder="Apellido y Nombre" name="apellidonombre">
-            <input type="email" placeholder="colocar mail" name="email">
-            <input type="number" placeholder="Numero de telefono" name="numerodetelefono">
-            <select name="Genero" id="">
-                <option value="0" selected disabled>Genero</option>
-                <option value="1" >Masculino</option>
-                <option value="2" >Femenino</option>
-                <option value="3" >otros</option>
-            </select>
-            <textarea name="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
-            <button type="submit"> Enviar</button>
-            <button type="reset"> reset</button>
-        </form>
+      <form class="formulario">        
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Apellido y Nombre</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Numero de telefono</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@mail.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Genero</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Femenino</option>
+            <option>Masculino</option>
+            <option>otros</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Dejanos tu mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">ENVIAR</button>
+      </form>
     </main>
+  
+<!-- Fin de Main -->
+<!-- Comienzo de Footer -->
+
     <footer>
         <ul>
             <li><i class="fa-solid fa-envelope"></i>Mail de empresa</li>
@@ -56,6 +82,9 @@
             <li><i class="fa-brands fa-instagram"></i>Instagram</li>
         </ul>
     </footer>
+
+<!-- Fin de Footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
