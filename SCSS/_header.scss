@@ -1,16 +1,21 @@
 header {
-    #logo{
-        width: 100px;
-    }
-    .nav-link {
-        padding-right: 1.5rem !important;
-        padding-left: 1.5rem !important;
-        font-size: 20px;
-        text-align: center;
+    .navbar {
+        background: linear-gradient(90deg, rgba(64, 64, 88, 1) 0%, rgba(92, 92, 143, 1) 35%, rgba(118, 159, 167, 1) 100%);
 
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.354);
-            transform: scale(1.2) translateY(1px);
+        #logo {
+            width: 100px;
+        }
+
+        .nav-link {
+            padding-right: 1.5rem !important;
+            padding-left: 1.5rem !important;
+            font-size: 20px;
+            text-align: center;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.354);
+                transform: scale(1.2) translateY(1px);
+            }
         }
     }
 }
