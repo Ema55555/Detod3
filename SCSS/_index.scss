@@ -5,36 +5,7 @@
         margin-bottom: 0px;
         object-fit: cover;
         object-position: 0 80%;
-    }
-
-    min-height: 400px;
-
-    .carousel-inner h5 {
-        color: black;
-
-    }
-
-    .carousel-inner img {
-        width: 100%;
-        max-height: 460px;
-    }
-
-    .carousel-caption {
-        background-color: rgba(34, 28, 70, 0.521);
-        padding: 0;
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-
-    button {
-        display: inline-block;
-        font-size: 18px;
-    }
-
-    .row {
-        margin: 20px;
-        text-align: center;
-        font-size: 8px;
+        min-height: 400px;
     }
 
     .info {
@@ -56,6 +27,34 @@
             padding-left: 2rem;
             font-size: 15px;
             padding-bottom: 25px;
+        }
+    }
+
+    .seccion-central {
+        h2{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            margin-bottom: 0;
+            color: rgb(0, 0, 0);
+            background: rgba(92, 93, 94, 0.692);
+        }
+        .carousel-inner {
+            img {
+                width: 100%;
+                max-height: 460px;
+            }
+
+            .carousel-caption {
+                background-color: rgba(34, 28, 70, 0.521);
+                padding: 0;
+                margin-left: 200px;
+                margin-right: 200px;
+
+                h3 {
+                    color: black;
+                }
+            }
         }
     }
 }

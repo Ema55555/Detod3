@@ -1,14 +1,15 @@
-header #logo {
-  width: 100px; }
-
-header .nav-link {
-  padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
-  font-size: 20px;
-  text-align: center; }
-  header .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.354);
-    transform: scale(1.2) translateY(1px); }
+header .navbar {
+  background: linear-gradient(90deg, #404058 0%, #5c5c8f 35%, #769fa7 100%); }
+  header .navbar #logo {
+    width: 100px; }
+  header .navbar .nav-link {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    font-size: 20px;
+    text-align: center; }
+    header .navbar .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.354);
+      transform: scale(1.2) translateY(1px); }
 
 footer {
   background: linear-gradient(90deg, #404058 0%, #5c5c8f 35%, #769fa7 100%);
@@ -30,46 +31,49 @@ footer {
   text-align: center;
   background-color: #8990a2; }
 
-.index {
+.index .imagen {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 0px;
+  object-fit: cover;
+  object-position: 0 80%;
   min-height: 400px; }
-  .index .imagen {
-    width: 100%;
-    height: 350px;
-    margin-bottom: 0px;
-    object-fit: cover;
-    object-position: 0 80%; }
-  .index .carousel-inner h5 {
+
+.index .info {
+  text-align: center; }
+  .index .info #titulo {
+    background-color: #8990a2;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 2rem;
+    font-size: 20px; }
+  .index .info #Texto {
+    background-color: #8990a2;
+    color: black;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 15px;
+    padding-bottom: 25px; }
+
+.index .seccion-central h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+  color: black;
+  background: rgba(92, 93, 94, 0.692); }
+
+.index .seccion-central .carousel-inner img {
+  width: 100%;
+  max-height: 460px; }
+
+.index .seccion-central .carousel-inner .carousel-caption {
+  background-color: rgba(34, 28, 70, 0.521);
+  padding: 0;
+  margin-left: 200px;
+  margin-right: 200px; }
+  .index .seccion-central .carousel-inner .carousel-caption h3 {
     color: black; }
-  .index .carousel-inner img {
-    width: 100%;
-    max-height: 460px; }
-  .index .carousel-caption {
-    background-color: rgba(34, 28, 70, 0.521);
-    padding: 0;
-    margin-left: 200px;
-    margin-right: 200px; }
-  .index button {
-    display: inline-block;
-    font-size: 18px; }
-  .index .row {
-    margin: 20px;
-    text-align: center;
-    font-size: 8px; }
-  .index .info {
-    text-align: center; }
-    .index .info #titulo {
-      background-color: #8990a2;
-      color: black;
-      padding-bottom: 20px;
-      padding-top: 2rem;
-      font-size: 20px; }
-    .index .info #Texto {
-      background-color: #8990a2;
-      color: black;
-      padding-right: 2rem;
-      padding-left: 2rem;
-      font-size: 15px;
-      padding-bottom: 25px; }
 
 /* APLICO EXTEND Y MIXIN */
 .texto_informativo .titulo, .texto_informativo .Texto {
@@ -94,6 +98,45 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px; }
 
+main {
+  min-height: 400px; }
+  main .sectionproductos {
+    background-color: white;
+    padding: 20px; }
+    main .sectionproductos #titulodeproducto {
+      background: linear-gradient(90deg, #404058 0%, #5c5c8f 35%, #769fa7 100%);
+      text-align: center;
+      padding: 5px 5px 10px 5px;
+      margin: 10px 0px;
+      border-radius: 1rem; }
+    main .sectionproductos ul {
+      display: grid;
+      background-color: white;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+      main .sectionproductos ul tex article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px black;
+        padding: 20px; }
+        main .sectionproductos ul tex article img {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+          object-position: 50% 50%; }
+        main .sectionproductos ul tex article span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 20px; }
+        main .sectionproductos ul tex article p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -104,45 +147,6 @@ footer {
 body {
   overflow-x: hidden;
   background-color: #8990a2; }
-
-main {
-  min-height: 400px; }
-  main #titulodeproducto {
-    background: linear-gradient(90deg, #404058 0%, #5c5c8f 35%, #769fa7 100%);
-    text-align: center;
-    padding: 5px 5px 10px 5px;
-    margin: 10px 0px;
-    border-radius: 1rem; }
-  main .sectionproductos {
-    background-color: white;
-    padding: 20px; }
-    main .sectionproductos .sectionproductos ul {
-      display: grid;
-      background-color: white;
-      gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
-    main .sectionproductos section ul li article {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 0 10px black;
-      padding: 20px; }
-      main .sectionproductos section ul li article section ul li article img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        object-position: 50% 50%; }
-      main .sectionproductos section ul li article section ul li article span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px; }
-      main .sectionproductos section ul li article section ul li article p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50px; }
 
 main section h3 {
   text-align: center; }
