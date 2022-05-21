@@ -27,9 +27,20 @@ footer {
   footer .medio_insta {
     color: #fa5c00; }
 
+.envios h1 {
+  text-align: center; }
+
 #enviossincargo {
   text-align: center;
   background-color: #8990a2; }
+
+.maps {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  object-position: 50% 50%; }
 
 .index .imagen {
   width: 100%;
@@ -113,25 +124,26 @@ main {
       display: grid;
       background-color: white;
       gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
-      main .sectionproductos ul tex article {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      list-style: none; }
+      main .sectionproductos ul article {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         box-shadow: 0 0 10px black;
         padding: 20px; }
-        main .sectionproductos ul tex article img {
+        main .sectionproductos ul article img {
           width: 100%;
           height: 400px;
           object-fit: cover;
           object-position: 50% 50%; }
-        main .sectionproductos ul tex article span {
+        main .sectionproductos ul article span {
           display: flex;
           justify-content: center;
           align-items: center;
           padding-top: 20px; }
-        main .sectionproductos ul tex article p {
+        main .sectionproductos ul article p {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -148,5 +160,6 @@ body {
   overflow-x: hidden;
   background-color: #8990a2; }
 
-main section h3 {
-  text-align: center; }
+/* main section h3 {
+    text-align: center;
+} */
