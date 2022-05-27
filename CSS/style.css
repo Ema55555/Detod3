@@ -1,23 +1,28 @@
-header .navbar {
-  background: linear-gradient(90deg, #404058 0%, #5c5c8f 35%, #769fa7 100%); }
-  header .navbar #logo {
+header .navbar-light {
+  background: linear-gradient(90deg, #010106 0%, #51518d 35%, #010106 100%); }
+  header .navbar-light #logo {
     width: 100px; }
-  header .navbar .nav-link {
+  header .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke=' rgb(210, 210, 210)  ' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
+  header .navbar-light .navbar-nav a {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
     font-size: 20px;
-    text-align: center; }
-    header .navbar .nav-link:hover {
+    text-align: center;
+    color: #d2d2d2 !important; }
+    header .navbar-light .navbar-nav a:hover {
       background-color: rgba(255, 255, 255, 0.354);
       transform: scale(1.2) translateY(1px); }
 
 footer {
-  background: linear-gradient(90deg, #404058 0%, #5c5c8f 35%, #769fa7 100%);
+  background: linear-gradient(90deg, #010106 0%, #51518d 35%, #010106 100%);
   padding: 10px; }
   footer ul {
     text-align: left; }
     footer ul li {
-      list-style: none; }
+      list-style: none;
+      color: #3b3939;
+      text-shadow: 0.1em 0.1em 0.2em white; }
   footer .medio_mail {
     color: #130931; }
   footer .medio_telefono {
@@ -26,15 +31,57 @@ footer {
     color: #cfcfe7; }
   footer .medio_insta {
     color: #fa5c00; }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+    footer div img {
+      width: 25px;
+      height: 25px; }
+    footer div a {
+      text-decoration: none; }
+      footer div a h5 {
+        margin-left: 16px;
+        margin-top: 5px;
+        color: aliceblue;
+        font-size: 15px; }
 
-.envios h1 {
-  text-align: center; }
-
-#enviossincargo {
+.main_envios h1 {
   text-align: center;
-  background-color: #8990a2; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
-.maps {
+.main_envios .cards_envios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center; }
+  @media screen and (max-width: 991px) {
+    .main_envios .cards_envios {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main_envios .cards_envios .card {
+        margin-top: 2rem;
+        width: 30rem !important; } }
+  .main_envios .cards_envios .card {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+    .main_envios .cards_envios .card .correo_andreani {
+      background: #d02323; }
+    .main_envios .cards_envios .card .correo_oca {
+      background: #651ce3; }
+    .main_envios .cards_envios .card .correo_correoArgentino {
+      background: #e0dc00; }
+
+.main_envios #enviossincargo {
+  text-align: center;
+  background: #2b005563;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.main_envios .maps {
   display: flex;
   justify-content: center;
   object-fit: cover;
@@ -53,18 +100,22 @@ footer {
 .index .info {
   text-align: center; }
   .index .info #titulo {
-    background-color: #8990a2;
     color: black;
     padding-bottom: 20px;
-    padding-top: 2rem;
-    font-size: 20px; }
-  .index .info #Texto {
-    background-color: #8990a2;
-    color: black;
+    padding-top: 2rem; }
+  .index .info .descripcion {
+    border-top: 3px solid #1d0404;
+    border-bottom: 3px solid #1d0404;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
-    font-size: 15px;
-    padding-bottom: 25px; }
+    padding-top: 2rem;
+    padding-bottom: 1rem; }
+    .index .info .descripcion p {
+      color: black;
+      font-size: 15px;
+      line-height: 20px; }
 
 .index .seccion-central h2 {
   padding-top: 1rem;
@@ -102,10 +153,19 @@ footer {
   font-size: 15px;
   padding-bottom: 25px; }
 
-.formulario {
+.main_contacto h1 {
+  margin-top: 2rem;
+  text-align: center; }
+
+.main_contacto .formulario {
   padding-left: 80px;
   padding-right: 80px; }
-  .formulario .btn {
+  .main_contacto .formulario p {
+    text-transform: none;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 25px; }
+  .main_contacto .formulario .btn {
     margin-top: 20px;
     margin-bottom: 20px; }
 
@@ -125,29 +185,33 @@ main {
       background-color: white;
       gap: 20px;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      list-style: none; }
-      main .sectionproductos ul article {
+      list-style: none;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-top: 2rem; }
+      main .sectionproductos ul li:hover {
+        background-color: rgba(0, 0, 0, 0.354);
+        transform: scale(1.03) translateY(0.5px); }
+      main .sectionproductos ul li article {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         box-shadow: 0 0 10px black;
         padding: 20px; }
-        main .sectionproductos ul article img {
+        main .sectionproductos ul li article img {
           width: 100%;
           height: 400px;
           object-fit: cover;
           object-position: 50% 50%; }
-        main .sectionproductos ul article span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding-top: 20px; }
-        main .sectionproductos ul article p {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 50px; }
+        main .sectionproductos ul li article a {
+          text-decoration: none;
+          color: black;
+          margin-top: 20px; }
+          main .sectionproductos ul li article a:hover {
+            background-color: rgba(75, 0, 236, 0.572);
+            transform: scale(1.1) translateY(0.5px);
+            border-radius: 1rem; }
 
 * {
   margin: 0;
