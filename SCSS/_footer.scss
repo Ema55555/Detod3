@@ -3,23 +3,48 @@ $redes: (
   telefono: #656566,
   facebook:#cfcfe7,
   insta: #fa5c00,
- );
+);
 
 footer {
-    background: linear-gradient(90deg, rgba(64,64,88,1) 0%, rgba(92,92,143,1) 35%, rgba(118,159,167,1) 100%);
-    padding: 10px;
-    ul {
-        text-align: left;
+  background: linear-gradient(90deg, rgb(1, 1, 6) 0%, rgb(81, 81, 141) 35%, rgb(1, 1, 6) 100%);
+  padding: 10px;
 
-        li {
-            list-style:none;
-        }
+  ul {
+    text-align: left;
+
+    li {
+      list-style: none;
+      color: rgb(59, 57, 57);
+      text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
     }
-    @each $red,
+  }
+
+  @each $red,
   $color in $redes {
     .medio_#{$red} {
       color: $color;
 
     }
   }
+
+  div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    margin-top: 1rem;    
+    img{
+      width: 25px;
+      height: 25px;
+    }
+    h5{
+      margin-left: 16px;
+      margin-top: 5px;
+      color: aliceblue;
+      font-size: 15px;
+    }
+  }
+}
+
+.footer_fixed {
+  bottom: 0; 
 }

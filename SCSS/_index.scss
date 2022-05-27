@@ -11,23 +11,29 @@
     .info {
         text-align: center;
 
-        #titulo {
-            background-color: #8990a2;
+        #titulo {          
             color: black;
             padding-bottom: 20px;
-            padding-top: 2rem;
-            font-size: 20px;
-
+            padding-top: 2rem;         
         }
 
-        #Texto {
-            background-color: #8990a2;
-            color: black;
+        .descripcion{
+            border-top: 3px solid rgb(29, 4, 4);
+            border-bottom: 3px solid rgb(29, 4, 4);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
             padding-right: 2rem;
             padding-left: 2rem;
-            font-size: 15px;
-            padding-bottom: 25px;
+            padding-top: 2rem ;
+            padding-bottom: 1rem;            
+
+            p {           
+                color: black;                
+                font-size: 15px;  
+                line-height: 20px;              
+            }
         }
+
     }
 
     .seccion-central {

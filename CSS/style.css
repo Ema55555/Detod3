@@ -12,12 +12,14 @@ header .navbar {
       transform: scale(1.2) translateY(1px); }
 
 footer {
-  background: linear-gradient(90deg, #404058 0%, #5c5c8f 35%, #769fa7 100%);
+  background: linear-gradient(90deg, #010106 0%, #51518d 35%, #010106 100%);
   padding: 10px; }
   footer ul {
     text-align: left; }
     footer ul li {
-      list-style: none; }
+      list-style: none;
+      color: #3b3939;
+      text-shadow: 0.1em 0.1em 0.2em white; }
   footer .medio_mail {
     color: #130931; }
   footer .medio_telefono {
@@ -26,6 +28,22 @@ footer {
     color: #cfcfe7; }
   footer .medio_insta {
     color: #fa5c00; }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+    footer div img {
+      width: 25px;
+      height: 25px; }
+    footer div h5 {
+      margin-left: 16px;
+      margin-top: 5px;
+      color: aliceblue;
+      font-size: 15px; }
+
+.footer_fixed {
+  bottom: 0; }
 
 .envios h1 {
   text-align: center; }
@@ -53,18 +71,22 @@ footer {
 .index .info {
   text-align: center; }
   .index .info #titulo {
-    background-color: #8990a2;
     color: black;
     padding-bottom: 20px;
-    padding-top: 2rem;
-    font-size: 20px; }
-  .index .info #Texto {
-    background-color: #8990a2;
-    color: black;
+    padding-top: 2rem; }
+  .index .info .descripcion {
+    border-top: 3px solid #1d0404;
+    border-bottom: 3px solid #1d0404;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
-    font-size: 15px;
-    padding-bottom: 25px; }
+    padding-top: 2rem;
+    padding-bottom: 1rem; }
+    .index .info .descripcion p {
+      color: black;
+      font-size: 15px;
+      line-height: 20px; }
 
 .index .seccion-central h2 {
   padding-top: 1rem;
@@ -102,10 +124,19 @@ footer {
   font-size: 15px;
   padding-bottom: 25px; }
 
-.formulario {
+.main_contacto h1 {
+  margin-top: 2rem;
+  text-align: center; }
+
+.main_contacto .formulario {
   padding-left: 80px;
   padding-right: 80px; }
-  .formulario .btn {
+  .main_contacto .formulario p {
+    text-transform: none;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 25px; }
+  .main_contacto .formulario .btn {
     margin-top: 20px;
     margin-bottom: 20px; }
 
@@ -125,29 +156,33 @@ main {
       background-color: white;
       gap: 20px;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      list-style: none; }
-      main .sectionproductos ul article {
+      list-style: none;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-top: 2rem; }
+      main .sectionproductos ul li:hover {
+        background-color: rgba(0, 0, 0, 0.354);
+        transform: scale(1.03) translateY(0.5px); }
+      main .sectionproductos ul li article {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         box-shadow: 0 0 10px black;
         padding: 20px; }
-        main .sectionproductos ul article img {
+        main .sectionproductos ul li article img {
           width: 100%;
           height: 400px;
           object-fit: cover;
           object-position: 50% 50%; }
-        main .sectionproductos ul article span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding-top: 20px; }
-        main .sectionproductos ul article p {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 50px; }
+        main .sectionproductos ul li article a {
+          text-decoration: none;
+          color: black;
+          margin-top: 20px; }
+          main .sectionproductos ul li article a:hover {
+            background-color: rgba(75, 0, 236, 0.572);
+            transform: scale(1.1) translateY(0.5px);
+            border-radius: 1rem; }
 
 * {
   margin: 0;
