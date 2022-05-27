@@ -1,21 +1,29 @@
 header {
-    .navbar {
-        background: linear-gradient(90deg, rgba(64, 64, 88, 1) 0%, rgba(92, 92, 143, 1) 35%, rgba(118, 159, 167, 1) 100%);
+    .navbar-light {
+        background: linear-gradient(90deg, rgb(1, 1, 6) 0%, rgb(81, 81, 141) 35%, rgb(1, 1, 6) 100%);
 
         #logo {
             width: 100px;
         }
 
-        .nav-link {
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke=' rgb(210, 210, 210)  ' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+          }
+
+        .navbar-nav {
+            a{
             padding-right: 1.5rem !important;
             padding-left: 1.5rem !important;
             font-size: 20px;
             text-align: center;
+            color: rgb(210, 210, 210) !important;   
+              
 
             &:hover {
                 background-color: rgba(255, 255, 255, 0.354);
                 transform: scale(1.2) translateY(1px);
             }
         }
+    }
     }
 }

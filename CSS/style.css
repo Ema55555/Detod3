@@ -1,13 +1,16 @@
-header .navbar {
-  background: linear-gradient(90deg, #404058 0%, #5c5c8f 35%, #769fa7 100%); }
-  header .navbar #logo {
+header .navbar-light {
+  background: linear-gradient(90deg, #010106 0%, #51518d 35%, #010106 100%); }
+  header .navbar-light #logo {
     width: 100px; }
-  header .navbar .nav-link {
+  header .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke=' rgb(210, 210, 210)  ' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
+  header .navbar-light .navbar-nav a {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
     font-size: 20px;
-    text-align: center; }
-    header .navbar .nav-link:hover {
+    text-align: center;
+    color: #d2d2d2 !important; }
+    header .navbar-light .navbar-nav a:hover {
       background-color: rgba(255, 255, 255, 0.354);
       transform: scale(1.2) translateY(1px); }
 
@@ -36,23 +39,49 @@ footer {
     footer div img {
       width: 25px;
       height: 25px; }
-    footer div h5 {
-      margin-left: 16px;
-      margin-top: 5px;
-      color: aliceblue;
-      font-size: 15px; }
+    footer div a {
+      text-decoration: none; }
+      footer div a h5 {
+        margin-left: 16px;
+        margin-top: 5px;
+        color: aliceblue;
+        font-size: 15px; }
 
-.footer_fixed {
-  bottom: 0; }
-
-.envios h1 {
-  text-align: center; }
-
-#enviossincargo {
+.main_envios h1 {
   text-align: center;
-  background-color: #8990a2; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
-.maps {
+.main_envios .cards_envios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center; }
+  @media screen and (max-width: 991px) {
+    .main_envios .cards_envios {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main_envios .cards_envios .card {
+        margin-top: 2rem;
+        width: 30rem !important; } }
+  .main_envios .cards_envios .card {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+    .main_envios .cards_envios .card .correo_andreani {
+      background: #d02323; }
+    .main_envios .cards_envios .card .correo_oca {
+      background: #651ce3; }
+    .main_envios .cards_envios .card .correo_correoArgentino {
+      background: #e0dc00; }
+
+.main_envios #enviossincargo {
+  text-align: center;
+  background: #2b005563;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.main_envios .maps {
   display: flex;
   justify-content: center;
   object-fit: cover;
